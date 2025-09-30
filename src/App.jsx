@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <div>
-      <h1>Hello Moon </h1>
+      <Header />
+      <Main />
     </div>
   );
 }
