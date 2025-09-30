@@ -1,7 +1,10 @@
 .buttonLink {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 
