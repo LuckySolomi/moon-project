@@ -4,14 +4,22 @@
 
 body {
   background: #000000;
+  color: #ffffff;
 }
 
 h1 {
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 500;
+  margin: 0;
 }
 
 p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  margin: 0;
+}
+
+.app {
+  position: relative;
+  z-index: 1; /* тексти і контент будуть зверху */
 }

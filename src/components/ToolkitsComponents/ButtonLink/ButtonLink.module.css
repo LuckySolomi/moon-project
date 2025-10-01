@@ -19,3 +19,12 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+  .buttonLink {
+    font-size: 14px;
+  }
+}

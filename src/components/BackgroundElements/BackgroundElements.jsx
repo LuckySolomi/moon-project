@@ -15,23 +15,23 @@ function BackgroundElements() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.backgroundElementsContainer}>
       <img
         src={blueShadow}
         alt=""
-        className={`${styles.img} ${styles.blue}`}
+        className={`${styles.img} ${styles.blueShadow}`}
         style={{ transform: `translateY(${offset * 0.4}px)` }}
       />
       <img
         src={redShadow}
         alt=""
-        className={`${styles.img} ${styles.red}`}
+        className={`${styles.img} ${styles.redShadow}`}
         style={{ transform: `translateY(${offset * 0.6}px)` }}
       />
       <img
         src={moonImg}
         alt=""
-        className={`${styles.img} ${styles.moon}`}
+        className={`${styles.img} ${styles.halfMoon}`}
         style={{ transform: `translateY(${offset * 0.2}px)` }}
       />
     </div>

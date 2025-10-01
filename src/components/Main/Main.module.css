@@ -1,6 +1,14 @@
+body {
+  margin: 0 74px;
+}
+
 .gradientText {
-  font-size: 36px;
-  font-weight: bold;
+  max-width: 1600px;
+  margin-top: 113px;
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 140px;
   background: linear-gradient(
     106.2deg,
     #963488 -12.33%,
@@ -9,4 +17,31 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.initialSectionText {
+  margin-top: 60px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.initialSectionButton {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0 2rem;
+    text-align: center;
+  }
+
+  .gradientText {
+    font-size: 40px;
+  }
 }

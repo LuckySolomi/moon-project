@@ -3,7 +3,7 @@
   padding: 12px 24px;
   border: none;
   border-radius: 91px;
-  background: transparent;
+  background: #000000;
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -53,4 +53,24 @@
 .lg {
   height: 77px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+  .sm {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .md {
+    height: 72px;
+    font-size: 20px;
+  }
+
+  .lg {
+    height: 77px;
+    font-size: 24px;
+  }
 }
