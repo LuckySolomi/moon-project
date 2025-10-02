@@ -1,7 +1,8 @@
 import React from "react";
 import BackgroundElements from "./components/BackgroundElements/BackgroundElements";
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import InitialSection from "./components/InitialSection/InitialSection.jsx";
+import NumberCardSection from "./components/NumberCardSection/NumberCardSection.jsx";
 import styles from "./App.module.css";
 
 function App() {
@@ -9,7 +10,10 @@ function App() {
     <div className={styles.app}>
       <BackgroundElements />
       <Header />
-      <Main />
+      <main>
+        <InitialSection />
+        <NumberCardSection />
+      </main>
     </div>
   );
 }
