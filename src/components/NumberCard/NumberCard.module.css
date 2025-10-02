@@ -1,0 +1,29 @@
+.numberCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 564px;
+  height: 192px;
+  padding: 32px;
+  border-radius: 91px;
+  opacity: 1;
+  gap: 20px;
+  background: linear-gradient(
+    106.2deg,
+    rgba(150, 52, 136, 0.2) -12.33%,
+    rgba(252, 111, 50, 0.2) 50.28%,
+    rgba(255, 74, 89, 0.2) 114.17%
+  );
+}
+
+.cardNumber {
+  font-family: Clash Grotesk;
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 64px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
