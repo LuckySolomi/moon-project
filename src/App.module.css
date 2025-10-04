@@ -10,27 +10,29 @@ body {
 h1 {
   font-family: "Clash Grotesk", sans-serif;
   font-weight: 500;
+  font-size: 128px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   margin: 0;
 }
 
 p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 24px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   margin: 0;
 }
-
-font-family: Inter;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
 
 .app {
   position: relative;
@@ -39,6 +41,7 @@ letter-spacing: 0%;
 
 main {
   margin: 0 74px;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
