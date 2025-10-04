@@ -1,0 +1,13 @@
+.tableSectionTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableSectionText {
+  margin: 35px 0;
+}
+
+.tableSectionButtonContainer {
+  margin: 20px auto;
+}
