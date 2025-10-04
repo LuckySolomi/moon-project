@@ -1,0 +1,16 @@
+.runningLineSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.logosContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 160px;
+}
