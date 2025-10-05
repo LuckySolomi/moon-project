@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./ButtonLink.module.css";
 
-function ButtonLink({ href, children, className = "" }) {
+function ButtonLink({ onClick, children, className = "" }) {
   return (
-    <a href={href} className={`${styles.buttonLink} ${className}`}>
+    <button onClick={onClick} className={`${styles.buttonLink} ${className}`}>
       {children}
-    </a>
+    </button>
   );
 }
 

@@ -19,7 +19,7 @@ function InitialSection({ gradientChanged }) {
       </p>
       <div className={styles.initialSectionButtonContainer}>
         <Button size="lg">Buy Spice AI</Button>
-        <ButtonLink href="#">Try Now</ButtonLink>
+        <ButtonLink>Try Now</ButtonLink>
       </div>
     </section>
   );

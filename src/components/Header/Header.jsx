@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.header}>
-        <ButtonLink href="#">LLM Leaderboard</ButtonLink>
+        <ButtonLink>LLM Leaderboard</ButtonLink>
         <Button size="sm">Buy Spice AI</Button>
       </div>
     </div>
