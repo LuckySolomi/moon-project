@@ -13,6 +13,9 @@ import styles from "./App.module.css";
 function App() {
   const numberSectionRef = useRef(null);
   const isNumberSectionInView = useInView(numberSectionRef, { threshold: 0.3 });
+
+  const descriptionRef = useRef(null);
+  const isDescriptionInView = useInView(descriptionRef, { threshold: 0.3 });
   return (
     <div className={styles.app}>
       <BackgroundElements />
@@ -21,7 +24,9 @@ function App() {
         <InitialSection gradientChanged={isNumberSectionInView} />
         <NumberCardSection ref={numberSectionRef} />
         <RunningLineSection />
-        <DescriptionSection />
+        <div ref={descriptionRef}>
+          <DescriptionSection isVisible={isDescriptionInView} />
+        </div>
         <TableSection />
       </main>
     </div>

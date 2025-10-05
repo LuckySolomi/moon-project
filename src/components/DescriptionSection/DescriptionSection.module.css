@@ -1,6 +1,12 @@
 .descriptionSection {
+  position: relative;
+}
+
+.descriptionSectionContainer {
   width: 1095px;
-  margin-top: 25rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
 }
 
@@ -10,4 +16,28 @@
 
 .descriptionSectionButton {
   margin-top: 28px;
+}
+
+.comet {
+  position: absolute;
+  top: -20%;
+  left: -15%;
+  width: 180px;
+  opacity: 0.8;
+  transform: rotate(25deg);
+  animation: cometFly 4s ease-in-out forwards;
+}
+
+@keyframes cometFly {
+  0% {
+    transform: translate(0, 0) rotate(25deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1200%, 400%) rotate(10deg);
+    opacity: 0;
+  }
 }
