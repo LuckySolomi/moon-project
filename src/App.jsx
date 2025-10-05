@@ -22,7 +22,9 @@ function App() {
       <Header />
       <main>
         <InitialSection gradientChanged={isNumberSectionInView} />
-        <NumberCardSection ref={numberSectionRef} />
+        <div ref={numberSectionRef}>
+          <NumberCardSection />
+        </div>
         <RunningLineSection />
         <div ref={descriptionRef}>
           <DescriptionSection isVisible={isDescriptionInView} />
