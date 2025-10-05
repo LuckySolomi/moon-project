@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { tableData } from "../../data/tableData.js";
 import TableRow from "../ToolkitsComponents/TableRow/TableRow";
 import Button from "../ToolkitsComponents/Button/Button.jsx";
 import ButtonLink from "../ToolkitsComponents/ButtonLink/ButtonLink.jsx";
+import ArrowIcon from "../ToolkitsComponents/ArrowIcon/ArrowIcon.jsx";
 import styles from "./TableSection.module.css";
 
 function TableSection() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleData = showAll ? tableData : tableData.slice(0, 10);
+
+  const handleToggle = () => setShowAll((prev) => !prev);
+
   return (
     <section>
       <div className={styles.tableSectionTitleContainer}>
@@ -36,7 +42,7 @@ function TableSection() {
         />
 
         {/* Рядки */}
-        {tableData.map((row, index) => (
+        {visibleData.map((row, index) => (
           <TableRow
             key={row.id}
             rank={index + 1}
@@ -46,7 +52,10 @@ function TableSection() {
         ))}
       </div>
       <div className={styles.tableSectionButtonContainer}>
-        <ButtonLink href="#">View more</ButtonLink>
+        <ButtonLink onClick={handleToggle}>
+          {showAll ? "View less" : "View more"}
+        </ButtonLink>
+        <ArrowIcon rotated={!showAll} onClick={handleToggle} />
       </div>
     </section>
   );

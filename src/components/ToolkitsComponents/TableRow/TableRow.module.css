@@ -12,14 +12,14 @@
 }
 
 .tableRowEven {
-  background: #c9d9ff14; /* сірий фон для парних рядків */
+  background: #c9d9ff14;
 }
 
 .tableRowNamerContainer {
   display: flex;
   align-items: center;
   gap: 24px;
-  flex: 1; /* щоб не вилазило */
+  flex: 1;
   min-width: 250px;
 }
 
