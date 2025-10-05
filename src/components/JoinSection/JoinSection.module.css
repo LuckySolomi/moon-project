@@ -1,0 +1,29 @@
+.joinSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+  color: #ffffff;
+}
+
+.joinSectionContainer {
+  max-width: 980px;
+}
+
+.joinSectionText {
+  margin-top: 26px;
+}
+
+.joinSectionTextNote {
+  margin-top: 15px;
+}
+
+.joinSectionIconsContainer {
+  margin-top: 20px;
+}
+
+.joinSectionIconsContainer img {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}

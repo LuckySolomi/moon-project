@@ -8,6 +8,7 @@ import NumberCardSection from "./components/NumberCardSection/NumberCardSection.
 import RunningLineSection from "./components/RunningLineSection/RunningLineSection.jsx";
 import DescriptionSection from "./components/DescriptionSection/DescriptionSection.jsx";
 import TableSection from "./components/TableSection/TableSection.jsx";
+import JoinSection from "./components/JoinSection/JoinSection.jsx";
 import styles from "./App.module.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <DescriptionSection isVisible={isDescriptionInView} />
         </div>
         <TableSection />
+        <JoinSection />
       </main>
     </div>
   );
