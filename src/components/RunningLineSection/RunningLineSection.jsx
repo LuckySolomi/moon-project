@@ -8,7 +8,7 @@ function RunningLineSection() {
   const { scrollYProgress } = useScroll();
 
   // рухаємо блок від translateX(100%) до translateX(-100%)
-  const x = useTransform(scrollYProgress, [0.2, 0.7], ["100%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0.2, 0.5], ["100%", "-100%"]);
   return (
     <section className={styles.runningLineSection}>
       <h2>Projects integrated into the Arrakis AI Ecosystem</h2>
