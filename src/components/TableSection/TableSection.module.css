@@ -14,3 +14,30 @@
   align-items: center;
   margin: 20px 0;
 }
+
+.tableSectionTableContainer {
+  position: relative;
+}
+
+.rocket {
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 60px;
+  animation: rocketLaunch 2s ease-in-out forwards;
+  z-index: 100;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
