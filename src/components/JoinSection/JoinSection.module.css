@@ -108,7 +108,8 @@
 
   .roundMoon {
     top: -200px;
-    right: 78px;
+    right: auto;
+    left: auto;
     width: 220px;
     opacity: 0.8;
   }
