@@ -9,6 +9,7 @@ import RunningLineSection from "./components/RunningLineSection/RunningLineSecti
 import DescriptionSection from "./components/DescriptionSection/DescriptionSection.jsx";
 import TableSection from "./components/TableSection/TableSection.jsx";
 import JoinSection from "./components/JoinSection/JoinSection.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import styles from "./App.module.css";
 
 function App() {
@@ -33,6 +34,12 @@ function App() {
         <TableSection />
         <JoinSection />
       </main>
+      <img
+        src="/src/assets/img/nasa.svg"
+        alt="background"
+        className={styles.nasaBackground}
+      />
+      <Footer />
     </div>
   );
 }
