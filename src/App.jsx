@@ -34,12 +34,16 @@ function App() {
         <TableSection />
         <JoinSection />
       </main>
+      <div className={styles.appJoinText}>
+        <p>Join our community and harvest $SALT</p>
+      </div>
+
+      <Footer />
       <img
         src="/src/assets/img/nasa.svg"
         alt="background"
         className={styles.nasaBackground}
       />
-      <Footer />
     </div>
   );
 }

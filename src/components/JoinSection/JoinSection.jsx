@@ -1,7 +1,15 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import styles from "./JoinSection.module.css";
 
 function JoinSection() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setOffsetY(window.scrollY * 0.2);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section className={styles.joinSection}>
       <div className={styles.joinSectionContainer}>
@@ -19,6 +27,12 @@ function JoinSection() {
           <img src="./src/assets/img/x-icon.svg" alt="x-icon" />
         </div>
       </div>
+      <img
+        src="/src/assets/img/round-moon.svg"
+        alt="moon"
+        className={styles.roundMoon}
+        style={{ transform: `translateY(${offsetY}px)` }}
+      />
     </section>
   );
 }

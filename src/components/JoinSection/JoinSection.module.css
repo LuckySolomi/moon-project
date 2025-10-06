@@ -1,5 +1,9 @@
 .joinSection {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  overflow: visible;
+  z-index: 0;
+  height: 70vh;
   display: flex;
   align-items: center;
   margin-left: 75px;
@@ -26,4 +30,14 @@
   width: 64px;
   height: 64px;
   margin-right: 20px;
+}
+
+.roundMoon {
+  position: absolute;
+  top: -500px;
+  right: 150px;
+  width: 400px;
+  z-index: -10;
+  transform: translateY(var(--parallax-offset, 0px));
+  transition: transform 0.2s ease-out;
 }
