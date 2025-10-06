@@ -21,7 +21,7 @@ function TableSection() {
   };
 
   return (
-    <section>
+    <section className={styles.tableSection}>
       <div className={styles.tableSectionTitleContainer}>
         <h2>LLM Leaderboard</h2>
         <Button size="lg">Submit your model</Button>

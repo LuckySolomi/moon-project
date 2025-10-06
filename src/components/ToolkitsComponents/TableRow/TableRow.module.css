@@ -66,10 +66,25 @@
   .tableRow {
     font-size: 14px;
     padding: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tableRowNumberContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .indicatorsContainer {
-    gap: 12px;
+    display: none;
+  }
+
+  .mobileOnly {
+    display: block;
+    text-align: right;
+    min-width: 60px;
   }
 }
 
