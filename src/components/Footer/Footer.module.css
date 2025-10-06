@@ -28,7 +28,7 @@ footer {
 }
 
 .footerNavContainer {
-  width: 500px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,4 +48,67 @@ footer {
 .footerNavContainer a:hover {
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    margin: 0 40px;
+  }
+
+  .footerButtonContainer {
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    gap: 16px;
+  }
+
+  .footerBottom {
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .footerIconsContainer img {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+  }
+
+  .footerNavContainer {
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin: 0;
+  }
+
+  .footerButtonContainer {
+    margin: 10px auto;
+    align-items: center;
+    width: 205px;
+    gap: 12px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 16px;
+    padding: 15px 0;
+  }
+
+  .footerIconsContainer {
+    display: none;
+  }
+
+  .footerNavContainer {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footerNavContainer a {
+    font-size: 11px;
+  }
 }
