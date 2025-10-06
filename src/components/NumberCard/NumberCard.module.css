@@ -18,7 +18,7 @@
 }
 
 .cardNumber {
-  font-family: Clash Grotesk;
+  font-family: "Clash Grotesk", sans-serif;
   font-weight: 600;
   font-style: Semibold;
   font-size: 64px;
@@ -26,4 +26,37 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .numberCardContainer {
+    width: 420px;
+    height: 160px;
+    padding: 28px;
+  }
+
+  .cardNumber {
+    font-size: 48px;
+  }
+
+  .cardText {
+    font-size: 18px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .numberCardContainer {
+    width: 320px;
+    height: auto;
+    padding: 28px;
+  }
+
+  .cardNumber {
+    font-size: 32px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
 }
