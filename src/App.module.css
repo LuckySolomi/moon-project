@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: #000000;
   color: #ffffff;
 }
@@ -38,10 +39,11 @@ p {
 .app {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 main {
-  margin: 0 74px;
+  padding: 0 74px;
   height: 100%;
 }
 
@@ -56,21 +58,44 @@ main {
   position: absolute;
   bottom: -65px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
   z-index: 0;
 }
 
 @media screen and (max-width: 1024px) {
+  main {
+    padding: 0;
+  }
+
+  .appJoinText {
+    margin-bottom: 10rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   body {
-    margin: 0 2rem;
+    margin: 0;
+    padding: 0 15px;
     text-align: center;
   }
 
   .gradientText {
     font-size: 40px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .appJoinText {
+    margin-bottom: 6rem;
+  }
+
+  .nasaBackground {
+    bottom: 0;
+    left: -15px;
+    width: 100vw;
+    height: auto;
   }
 }

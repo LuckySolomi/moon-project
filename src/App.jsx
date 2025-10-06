@@ -18,12 +18,14 @@ function App() {
 
   const descriptionRef = useRef(null);
   const isDescriptionInView = useInView(descriptionRef, { threshold: 0.3 });
+
+  const isDesktop = window.innerWidth > 1024;
   return (
     <div className={styles.app}>
       <BackgroundElements />
       <Header />
       <main>
-        <InitialSection gradientChanged={isNumberSectionInView} />
+        <InitialSection gradientChanged={isDesktop && isNumberSectionInView} />
         <div ref={numberSectionRef}>
           <NumberCardSection />
         </div>
