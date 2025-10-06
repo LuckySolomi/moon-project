@@ -6,11 +6,11 @@ function RunningLineSection() {
     <section className={styles.runningLineSection}>
       <h2>Projects integrated into the Arrakis AI Ecosystem</h2>
       <div className={styles.logosContainer}>
-        <img src="./src/assets/img/solana.svg" alt="Solana" />
-        <img src="./src/assets/img/arweave.svg" alt="Arweave" />
-        <img src="./src/assets/img/bittensor.svg" alt="Bittensor" />
-        <img src="./src/assets/img/logo4.svg" alt="Logo4" />
-        <img src="./src/assets/img/telegram.svg" alt="Logo5" />
+        <img src="solana.svg" alt="Solana" />
+        <img src="arweave.svg" alt="Arweave" />
+        <img src="bittensor.svg" alt="Bittensor" />
+        <img src="logo4.svg" alt="Logo4" />
+        <img src="telegram.svg" alt="Logo5" />
       </div>
     </section>
   );

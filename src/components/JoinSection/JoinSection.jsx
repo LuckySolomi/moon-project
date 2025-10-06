@@ -23,12 +23,12 @@ function JoinSection() {
           Let the fate of AI be in our hands and not that of big tech companies.
         </p>
         <div className={styles.joinSectionIconsContainer}>
-          <img src="./src/assets/img/telegram.svg" alt="telegram" />
-          <img src="./src/assets/img/x-icon.svg" alt="x-icon" />
+          <img src="telegram.svg" alt="telegram" />
+          <img src="x-icon.svg" alt="x-icon" />
         </div>
       </div>
       <img
-        src="/src/assets/img/round-moon.svg"
+        src="round-moon.svg"
         alt="moon"
         className={styles.roundMoon}
         style={{ transform: `translateY(${offsetY}px)` }}

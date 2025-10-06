@@ -41,11 +41,7 @@ function App() {
       </div>
 
       <Footer />
-      <img
-        src="/src/assets/img/nasa.svg"
-        alt="background"
-        className={styles.nasaBackground}
-      />
+      <img src="nasa.svg" alt="background" className={styles.nasaBackground} />
     </div>
   );
 }

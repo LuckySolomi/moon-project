@@ -11,8 +11,8 @@ function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.footerIconsContainer}>
-          <img src="./src/assets/img/telegram.svg" alt="telegram" />
-          <img src="./src/assets/img/x-icon.svg" alt="x-icon" />
+          <img src="telegram.svg" alt="telegram" />
+          <img src="x-icon.svg" alt="x-icon" />
         </div>
         <nav className={styles.footerNavContainer}>
           <a href="#">Terms of Use</a>
