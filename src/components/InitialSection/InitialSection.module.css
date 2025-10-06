@@ -22,7 +22,7 @@
 
 .initialSectionText {
   margin-top: 60px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
@@ -49,10 +49,50 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .gradientText {
+    margin-top: 160px;
+    font-size: 72px;
+    line-height: 84px;
+  }
+
+  .initialSectionText {
+    font-size: 20px;
+    max-width: 80%;
+    margin: 40px auto 0;
+  }
+
+  .initialSectionButtonContainer {
+    margin-top: 28px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .initialSection {
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .gradientText {
-    font-size: 40px;
+    margin-top: 100px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .initialSectionText {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+
+  .initialSectionButtonContainer {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+    width: 100%;
   }
 }
