@@ -1,0 +1,49 @@
+footer {
+  margin: 0 74px;
+}
+
+.footerButtonContainer {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 0;
+  border-top: 1px solid #ffffff80;
+}
+
+.footerIconsContainer img {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+.footerNavContainer {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerNavContainer a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #8e8e8e;
+  transition: color 0.3s ease;
+}
+
+.footerNavContainer a:hover {
+  color: #fff;
+  cursor: pointer;
+}
