@@ -1,6 +1,6 @@
 .joinSection {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   overflow: visible;
   z-index: 0;
   height: 70vh;
@@ -40,4 +40,76 @@
   z-index: -10;
   transform: translateY(var(--parallax-offset, 0px));
   transition: transform 0.2s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .joinSection {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  .joinSectionContainer {
+    max-width: 700px;
+  }
+
+  .joinSectionIconsContainer img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .roundMoon {
+    top: -500px;
+    right: 50px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .joinSection {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .joinSectionContainer {
+    max-width: 100%;
+  }
+
+  .joinSection h2 {
+    font-size: 24px;
+  }
+
+  .joinSectionText {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .joinSectionTextNote {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .joinSectionIconsContainer {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .joinSectionIconsContainer img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .roundMoon {
+    top: -200px;
+    right: 78px;
+    width: 220px;
+    opacity: 0.8;
+  }
 }
