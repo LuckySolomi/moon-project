@@ -50,7 +50,8 @@
 
 @media screen and (max-width: 1024px) {
   .gradientText {
-    margin-top: 160px;
+    margin-top: 85px;
+    margin-left: 75px;
     font-size: 72px;
     line-height: 84px;
   }
@@ -63,6 +64,7 @@
 
   .initialSectionButtonContainer {
     margin-top: 28px;
+    margin-left: 75px;
   }
 }
 
@@ -78,6 +80,7 @@
 
   .gradientText {
     margin-top: 100px;
+    margin-left: 0;
     font-size: 32px;
     line-height: 38px;
   }
@@ -93,6 +96,7 @@
     flex-direction: column;
     gap: 12px;
     margin-top: 24px;
+    margin-left: 0;
     width: 100%;
   }
 }
