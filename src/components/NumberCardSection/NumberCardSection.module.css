@@ -5,6 +5,10 @@
   margin-top: 60px;
 }
 
+.numberCardContainerSection {
+  width: calc(30% - 20px);
+}
+
 @media screen and (max-width: 1024px) {
   .numberCardSection {
     flex-direction: column;

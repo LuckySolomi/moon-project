@@ -20,6 +20,7 @@ export default function NumberCardSection() {
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.5, delay: i * 0.3 }}
           viewport={{ once: false, amount: 0.3 }}
+          className={styles.numberCardContainerSection}
         >
           <NumberCard number={card.number} text={card.text} />
         </motion.div>
