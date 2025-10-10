@@ -22,6 +22,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 160px;
+  padding: 0 20px;
   align-items: center;
   white-space: nowrap;
   overflow: hidden;
@@ -57,7 +58,7 @@
   }
 
   .logosContainer {
-    gap: 50px;
+    gap: 0;
     flex-wrap: wrap;
   }
 
@@ -86,6 +87,7 @@
   .logosContainer {
     flex-wrap: wrap;
     gap: 40px;
+    padding: 0 15px;
   }
 
   .logosContainer img {

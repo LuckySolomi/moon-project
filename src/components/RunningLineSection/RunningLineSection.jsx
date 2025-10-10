@@ -14,7 +14,7 @@ function RunningLineSection() {
         className={styles.logosContainer}
         initial={{ x: "100%" }}
         animate={isInView ? { x: "0%" } : { x: "100%" }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 2.5, ease: "easeInOut" }}
       >
         <img src="solana.svg" alt="Solana" />
         <img src="arweave.svg" alt="Arweave" />
