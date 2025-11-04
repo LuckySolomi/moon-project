@@ -35,6 +35,7 @@ function BackgroundElements() {
         alt=""
         className={`${styles.img} ${styles.halfMoon}`}
         style={{ transform: `translateY(${-offset * 0.5}px)` }}
+        loading="lazy"
       />
     </div>
   );
