@@ -24,16 +24,16 @@
   left: 25%;
   transform: translateX(-50%);
   width: 60px;
-  animation: rocketLaunch 2s ease-in-out forwards;
+  animation: rocketLaunch 4s ease-in-out forwards;
   z-index: 100;
 }
 
 @keyframes rocketLaunch {
   0% {
     bottom: -100px;
-    opacity: 0;
+    opacity: 1;
   }
-  30% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -101,7 +101,7 @@
   }
 
   .rocket {
-    left: 50%;
+    left: 70%;
     width: 40px;
   }
 
