@@ -2,11 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw; /* чітко по ширині вікна */
+  height: 100vh; /* стабільна висота */
+  max-height: 100svh; /* для Safari: використовуємо modern unit як fallback */
   pointer-events: none;
   z-index: -10;
   overflow: hidden;
+  contain: layout paint;
+  will-change: transform;
 }
 
 .img {
